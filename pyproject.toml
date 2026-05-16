@@ -1,0 +1,23 @@
+[build-system]
+requires = [
+    "hatchling >= 1.26",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "shot"
+version = "0.1"
+authors = [
+  { name="sz", email="jakub.zarenmbinski@gmail.com" },
+]
+description = "colab trainer"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = ""
+Issues = ""
