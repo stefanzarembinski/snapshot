@@ -1,33 +1,25 @@
 ## INSTALLATION
 
-### Add the package to the Python path
+#### Build module
+```
+$ python -m build
+```
 
-To build wheel:
-
-PS .... snapshot> python -m build
-
-To install from wheel:
-
-PS .... snapshot> pip install dist\shot-0.1-py3-none-any.whl
-
-To uninstall:
-
-    PS ... > pip uninstall shot
-
-To install in editable mode:
-
-    PS ... > snapshot> pip install -e .
-
+#### Install from wheel
+```
+$ pip install dist\xxx-0.1-py3-none-any.whl
+```
+#### Uninstall
+```
+$ pip uninstall xxx
+```
+#### Install in editable mode
+```
+$ pip install -e .
+```
 ## IN/OUT
 
-in:     timeshots
-out:	features file: timestamp, f1, f2, ... ,fn
-
-in:     timeshots
-out:	targets file: timestamp, f1, f2, ... ,fm
-
-in:     timeshot
-out:	features or None
-
-in:     targets
-out:	L | S | N
+- generate_inputs_and_outputs()                                       -> tuple[list[tuple[float, list[float], int]], list[tuple[float, float, int]], int]
+- evaluate_outputs_utilization(outputs_predicted, outputs_ideal)      -> float
+- bridge.add_timeshot(timeshot)                                       -> tuple[list[float], Monotonic]
+- trading_decision(scalar)                                            -> tuple[Position, int, int]:
