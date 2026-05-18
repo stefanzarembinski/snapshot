@@ -206,8 +206,9 @@ class Bridge:
                 try:
                     snapshot, array, horizon = self.generate_snapshot(idx, direction)
                     horizons[direction] = horizon
-                    print(f'  {direction} snapshot (vertical_range={self.vertical_range[direction]}, snapshot_size={self.snapshot_size[direction]}, horizon={f'{horizon:>3}'}): '
-                        f'{format_snapshot(snapshot)}')
+                    # print(f'  {direction} snapshot (vertical_range={self.vertical_range[direction]}, snapshot_size={self.snapshot_size[direction]}, horizon={f'{horizon:>3}'}): '
+                    #     f'{format_snapshot(snapshot)}')
+                    
                     print(f'  {direction} array: {format_decorated_array(decorate_array(array, self.timeshots[idx]))}')
                 except SnapshotOverflowError as e:
                     horizons[direction] = e.horizon

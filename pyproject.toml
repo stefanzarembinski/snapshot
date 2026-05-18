@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 name = "shot"
 version = "0.1"
 authors = [
-  { name="sz", email="jakub.zarenmbinski@gmail.com" },
+  { name="jz", email="jakub.zarenmbinski@gmail.com" },
 ]
 description = "colab trainer"
 readme = "README.md"
