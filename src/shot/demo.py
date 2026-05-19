@@ -3,8 +3,6 @@ import pickle
 from shot.utils import *
 from shot.bridge import Bridge
 
-from play.inspector import OUTPUTS_VALID_FILE
-
 TIMESHOTS_FILE = '/media/dataphora/kingstone/Workspaces/FX/snapshot/snapshot-bridge/timeshots/timeshots.pkl'
 DATA_DIR = '/media/dataphora/kingstone/Workspaces/FX/snapshot/data'
 CHARTS_DIR = '/media/dataphora/kingstone/Workspaces/FX/snapshot/snapshot-bridge/charts'
@@ -85,7 +83,7 @@ def generate_inputs_and_outputs():
     print(f'Saved {len(inputs_train)} input samples to {FILE_NAME_PREFIX}_{INPUTS_TRAIN_FILE_NAME}')
     print(f'Saved {len(inputs_valid)} input samples to {FILE_NAME_PREFIX}_{INPUTS_VALID_FILE_NAME}')
     print(f'Saved {len(outputs_train)} output samples to {FILE_NAME_PREFIX}_{OUTPUTS_TRAIN_FILE_NAME}')
-    print(f'Saved {len(outputs_valid)} output samples to {FILE_NAME_PREFIX}_{OUTPUTS_VALID_FILE}')
+    print(f'Saved {len(outputs_valid)} output samples to {FILE_NAME_PREFIX}_{OUTPUTS_VALID_FILE_NAME}')
 
 
 # ############################################################################
