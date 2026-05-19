@@ -1,22 +1,22 @@
 ## INSTALLATION
 
-#### Build module
-```
-$ python -m build
-```
+### Add the package to the Python path
 
-#### Install from wheel
-```
-$ pip install dist\xxx-0.1-py3-none-any.whl
-```
-#### Uninstall
-```
-$ pip uninstall xxx
-```
-#### Install in editable mode
-```
-$ pip install -e .
-```
+To build wheel:
+
+PS .... snapshot> python -m build
+
+To install from wheel:
+
+PS .... snapshot> pip install dist\shot-0.1-py3-none-any.whl
+
+To uninstall:
+
+    PS ... snapshot> pip uninstall shot
+
+To install in editable mode:
+
+    PS ... snapshot> pip install -e .
 ## IN/OUT
 
 - generate_inputs_and_outputs()                                       -> tuple[list[tuple[float, list[float], int]], list[tuple[float, float, int]], int]
